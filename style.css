@@ -1,0 +1,377 @@
+/* Header */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #f04e31;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #d43a20;
+}
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Section Bannière */
+#banner {
+    background-color: #000000;
+    color: #fff;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-text {
+    max-width: 50%;
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 24px;
+}
+
+.banner-image img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Section About */
+.about-section {
+    padding: 60px 0;
+    background-color: #000000;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; /* Inverser l'ordre : image à gauche, texte à droite */
+}
+
+.about-text {
+    max-width: 50%;
+    margin-left: 200px; /* Ajouter un espace entre l'image et le texte */
+    color: #fff;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-image {
+    max-width: 50%;
+}
+
+.about-image img {
+    height: 300px;
+    border-radius: 10px;
+}
+/* Section Mes Services */
+.services-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Section Projets */
+.projects-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.project-item .btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+ 
+
+/* Section Compétences */
+.skills-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: flex; /* Utilise flexbox pour aligner les deux colonnes */
+    justify-content: space-between; /* Espace entre les colonnes */
+}
+
+.skills-left,
+.skills-right {
+    width: 45%; /* Chaque colonne prend 45% de la largeur */
+}
+
+.skills-left ul,
+.skills-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-left ul li,
+.skills-right ul li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+}
+/* Section Outils Utilisés */
+.tools-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.tools-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.tools-grid {
+    display: flex; /* Utilisation de flexbox pour aligner les deux colonnes */
+    justify-content: space-between; /* Espace entre les colonnes */
+}
+
+.tools-left,
+.tools-right {
+    width: 45%; /* Chaque colonne prend 45% de la largeur */
+}
+
+.tools-left ul,
+.tools-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tools-left ul li,
+.tools-right ul li {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex; /* Pour aligner le texte avec l'image */
+    align-items: center; /* Centrer l'image verticalement avec le texte */
+}
+
+.tools-left ul li img,
+.tools-right ul li img {
+    height: 30px; /* Ajuste la taille des logos */
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+.tools-left ul li,
+.tools-right ul li:hover {
+    background-color: #e6e6e6; /* Changement de couleur au survol */
+}
+
+/* Section Contact */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.contact-grid {
+    display: flex; /* Utilisation de flexbox pour aligner les colonnes */
+    justify-content: space-between;
+}
+
+.contact-left {
+    width: 45%;
+}
+
+.contact-left h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.contact-left img {
+    height: 50px; /* Ajuste la taille de l'image de localisation */
+}
+
+.contact-right {
+    width: 45%;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-right textarea {
+    resize: vertical; /* Pour ajuster la taille du champ de texte */
+}
+
+.contact-right button {
+    background-color: #f04e31;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-right button:hover {
+    background-color: #d43a20;
+}
